@@ -1,0 +1,58 @@
+.main-hours-display {
+
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  margin-bottom: $footer-content-margin;
+
+  .hours {
+
+    min-width: 300px;
+    width: 95%;
+    max-width: 400px;
+
+    h4 {
+      padding: 20px 0;
+      border-bottom: 3px solid $main-color;
+      text-align: center;
+    }
+
+    table {
+
+      margin: 20px 0;
+      min-width: 400px;
+
+      td {
+        padding: 5px 0;
+      }
+
+    }
+
+  }
+
+  .map {
+
+    min-width: 300px;
+    width: 95%;
+    max-width: 600px;
+    overflow: hidden;
+
+    border: 2px solid $main-color;
+
+  }
+}
